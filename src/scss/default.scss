@@ -1,0 +1,28 @@
+html, *, *:before, *:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+
+// Typography
+
+h1 {
+    font-size: 26px;
+
+      @media screen and (min-width: 768px) {font-size: 48px;}
+      @media screen and (min-width: 992px) {font-size: 60px;}
+  }
+
+  h2 {
+    font-size: 18px;
+
+      @media screen and (min-width: 768px) {font-size: 24px;}
+      @media screen and (min-width: 992px) {font-size: 30px;}
+  }
+
+  p {
+    font-size: 16px;
+
+      @media screen and (min-width: 992px) {font-size: 18px;}
+  }
