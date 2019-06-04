@@ -1,7 +1,7 @@
 <template>
-    <div class="logo">
+    <div class="header__logo logo">
         <span class="logo__part">outSource</span>
-        <span class="logo__part logo__part_pink">/wi-fi</span>
+        <span class="logo__part logo__part_colored">/wi-fi</span>
     </div>
 </template>
 
@@ -19,11 +19,9 @@ export default {
         font-size: 20px;
         font-weight: bold;
 
-        @media screen and (min-width: 600px) {
-            font-size: 22px;
-        }
+        @media screen and (min-width: 600px) {font-size: 22px;}
 
-        &_pink {
+        &_colored {
             color: $pink;
         }
     }
