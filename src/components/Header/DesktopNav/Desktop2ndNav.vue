@@ -25,8 +25,8 @@ export default {
     },
     data () {
         return {
-            anchorTextValue: ["О компании", "Проекты", "Новости", "Контакты"],
-            anchorColorValue: 'anchor-grey'
+            anchorTextValue: ["Продукты", "Услуги", "Отраслевые решения", "Программное обеспечение"],
+            anchorColorValue: 'anchor-black'
         }
     }
 }
@@ -37,26 +37,38 @@ export default {
 .desktop-nav {
     display: none;
     visibility: hidden;
-    font-size: 14px;
     padding: 0;
     margin: 0;
+    white-space: nowrap;
 
-    @media screen and (min-width: 1024px) { display: inline-block; visibility: visible; }
+    @media screen and (min-width: 1024px){
+        display: inline-block;
+        visibility: visible;
+    }
 
-    li:last-child  { padding-right: 0; }
-    li:first-child { padding-left: 0; }
+    li:last-child {
+        padding-right: 0;
+    }
+
+    li:first-child {
+        padding-left: 0;
+    }
 
     li {
         list-style: none;
         display: inline;
         padding: 0 15px;
 
-            a {
-               text-decoration: none;
-               line-height: 20px;
+        @media screen and (min-width: 1024px) { padding: 0 8px; }
 
-               &:hover { text-decoration: underline; }
+        a {
+            text-decoration: none;
+            line-height: 20px;
+
+            &:hover {
+                color: $pink;
             }
         }
+    }
 }
 </style>

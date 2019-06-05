@@ -17,8 +17,7 @@ export default {
     max-width: 280px;
     margin: 0 auto;
 
-    @media screen and (min-width: 420px) {max-width: 380px;}
-    @media screen and (min-width: 720px) {max-width: 680px;}
-    @media screen and (min-width: 960px) {max-width: 1160px;}
+    @media screen and (min-width: 320px) {max-width: 87.5%;}
+    @media screen and (min-width: 1440px) {max-width: 1160px;}
 }
 </style>
