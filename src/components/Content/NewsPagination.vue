@@ -69,11 +69,11 @@ export default {
             }
 
 
-        svg {
+            svg {
               @media screen and (max-width: 580px) {
               width: 10px;
               height: 10px;
-                    }
-                }
+            }
         }
+    }
 </style>
