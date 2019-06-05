@@ -28,7 +28,6 @@ export default {
 
     &__button {
         display: inline-block;
-        margin-right: 20px;
         width: 16px;
         height: 16px;
         border: 0;
@@ -39,6 +38,7 @@ export default {
     &__phone-icon {
         background: url('./phone-icon.svg') no-repeat;
         background-size: cover;
+        margin-right: 20px;
     }
     &__burger-icon {
         background: url('./burger-menu.svg') no-repeat;

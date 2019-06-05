@@ -1,14 +1,17 @@
 <template>
   <header class="header header_shadow">
     <container>
-      <div class="row">
+      <div class="row row__first">
         <Logo/>
         <DesktopNav/>
         <MobileNav/>
       </div>
     </container>
     <container>
-      <DesktopNav/>
+      <div class="row row__second">
+        <Desktop2ndNav/>
+        <ContactBlock></ContactBlock>
+      </div>
     </container>
       
       
@@ -20,6 +23,8 @@ import Logo from './Logo/Logo.vue'
 import Container from '@/components/Container.vue'
 import DesktopNav from '@/components/Header/DesktopNav/DesktopNav.vue'
 import MobileNav from './MobileNav/MobileNav.vue'
+import Desktop2ndNav from '@/components/Header/DesktopNav/Desktop2ndNav.vue'
+import ContactBlock from '@/components/Header/ContactBlock/ContactBlock.vue'
 
 export default {
   name: 'Header',
@@ -27,8 +32,18 @@ export default {
     Logo,
     Container,
     DesktopNav,
+    Desktop2ndNav,
+    ContactBlock,
     MobileNav
-  }
+  },
+    data() {
+        return {
+            anchors: [
+              { message: "Testing"     },
+              { message: "This thing"  }
+            ]
+        }
+    }
 }
 </script>
 
@@ -36,26 +51,25 @@ export default {
 <style scoped lang="scss">
     .header {
         color: $black;
-        background: $white;
 
-        &_shadow {
-          box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
-        }
+        &_shadow { box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1); }
 
         .row {
-          display: flex;
-          width: 100%;
-          justify-content: space-between;
-          align-items: center;
-          padding: 18px 0;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
 
-          @media screen and (min-width: 1160px) {
-                  border-bottom: 1px solid #E6E6E6;
-          }
-      }
+            &__first {
+              padding: 23px 0 17px;
+              @media screen and (min-width: 1024px) { border-bottom: 1px solid #E6E6E6; }
+            }
 
-
-    
+            &__second {
+              padding: 19px 0 17px;
+              @media screen and (max-width: 1024px) { display: none; }
+            }
+        }
 }
 
 </style>
