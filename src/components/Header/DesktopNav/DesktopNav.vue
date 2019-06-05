@@ -41,7 +41,7 @@ export default {
     padding: 0;
     margin: 0;
 
-    @media screen and (min-width: 1024px) { display: inline-block; visibility: visible; }
+    @media screen and (min-width: 1025px) { display: inline-block; visibility: visible; }
 
     li:last-child  { padding-right: 0; }
     li:first-child { padding-left: 0; }

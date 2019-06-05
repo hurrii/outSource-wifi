@@ -6,10 +6,6 @@
 </template>
 
 <script>
-// eslint-disable-next-line
-import BurgerMenu from './burger-menu.svg';
-// eslint-disable-next-line
-import PhoneIcon from './phone-icon.svg';
 
 export default {
   name: 'MobileNav'
@@ -21,7 +17,7 @@ export default {
 .mobile-nav {
     display: inline-block;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1025px) {
         visibility: hidden;
         display: none;
     }
