@@ -4,6 +4,7 @@
           <OnPageNav/>
         </Container>
         <NewsItem/>
+        <NewsPagination/>
     </main>
 </template>
 
@@ -11,13 +12,15 @@
 import Container from '@/components/Container.vue'
 import OnPageNav from '@/components/Content/OnPageNav/OnPageNav.vue'
 import NewsItem from '@/components/Content/NewsItem/NewsItem.vue'
+import NewsPagination from '@/components/Content/NewsPagination.vue'
 
 export default {
   name: 'Header',
   components: {
       Container,
       OnPageNav,
-      NewsItem
+      NewsItem,
+      NewsPagination
   }
 }
 </script>
