@@ -47,16 +47,16 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
       .news-item__content {
-          // margin: 40px 0;
-          // @media screen and (min-width: 580px) { margin: 60px 0; }
 
           p {
-              margin: 30px 0;
+              padding: 15px 0;
               color: $grey;
+              margin: 0;
           }
 
           figure {
               margin: 0;
+              padding: 25px 0;
 
               img {
                   display: block;
@@ -65,10 +65,16 @@ export default {
               }
 
               figcaption {
-                  margin-top: 20px;
+                  padding-top: 20px;
                   color: 16px;
                   color: $grey;
               }
           }
+
+          // Desktop
+          @media screen and (min-width: 1024px) {
+
+                figure      { padding: 30px 0; }
       }
+    }
 </style>

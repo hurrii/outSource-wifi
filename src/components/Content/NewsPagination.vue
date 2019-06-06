@@ -38,11 +38,12 @@ export default {
             width: 100%;
             background: #F4F4F4;
             height: 80px;
+            margin-top: 23px;
+            display: flex;
+            align-items: center;
 
-                @media screen and (min-width: 1024px) { height: 120px; }
+            @media screen and (min-width: 1024px) { height: 120px;  margin-top: 45px;}
             
-                    display: flex;
-                    align-items: center;
 
             .btns-wrapper {
                     display: flex;
