@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import Logo from './Logo/Logo.vue'
+import Logo from '@/components/Logo/Logo.vue'
 import Container from '@/components/Container.vue'
 import DesktopNav from '@/components/Header/DesktopNav/DesktopNav.vue'
 import MobileNav from './MobileNav/MobileNav.vue'
@@ -62,7 +62,7 @@ export default {
 
             &__first {
               padding: 23px 0 17px;
-              @media screen and (min-width: 1024px) { border-bottom: 1px solid #E6E6E6; }
+              @media screen and (min-width: 1025px) { border-bottom: 1px solid #E6E6E6; }
             }
 
             &__second {

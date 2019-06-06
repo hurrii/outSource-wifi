@@ -1,16 +1,19 @@
 <template>
     <footer class="footer">
         <Contact/>
+        <Info/>
     </footer>
 </template>
 
 <script>
 import Contact from './Contact/Contact.vue'
+import Info from './Info/Info.vue'
 
 export default {
   name: 'Footer',
   components: {
-      Contact
+      Contact,
+      Info
   }
 }
 </script>
