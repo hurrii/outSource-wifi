@@ -28,7 +28,7 @@ export default {
     display: none;
     visibility: hidden;
     padding: 0;
-    margin: 40px 0;
+    margin: 40px 0 0;
 
     @media screen and (min-width: 768px) { display: block; visibility: visible; }
 
