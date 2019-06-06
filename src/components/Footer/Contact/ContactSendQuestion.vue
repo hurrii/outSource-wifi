@@ -95,6 +95,7 @@ export default {
                 border-radius: 2px;
                 height: 48px;
                 flex: 1;
+                cursor: pointer;
             }
 
             @media screen and (max-width: 1024px) {
